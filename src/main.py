@@ -1,10 +1,19 @@
 from textnode import Textnode
 
-print("adf")
 
 def main():
     node = Textnode("This is a text node", "bold", "https://www.boot.dev")
     print(node)
 
 
-main() 
+#main() 
+
+props = {
+    "href": "https://www.google.com", 
+    "target": "_blank",
+    }
+
+for key in props.keys():
+    print(key + " ", props[key], end=" ")
+
+
